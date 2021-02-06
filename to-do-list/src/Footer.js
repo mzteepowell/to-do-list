@@ -9,7 +9,7 @@ export default function Footer() {
     </div>
     <a
         className="App-link"
-        href="https://github.com/mzteepowell"
+        href="https://github.com/mzteepowell/to-do-list"
         target="_blank"
         rel="noopener noreferrer"
         >

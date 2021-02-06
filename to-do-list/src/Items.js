@@ -8,7 +8,7 @@ class Items extends React.Component {
             checkboxes: {
                 type: "checkbox"
             },
-            input: null,
+            input: "",
             answer: true
          };
 

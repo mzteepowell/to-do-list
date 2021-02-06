@@ -1,5 +1,29 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
 .App {
+  background-color: #282c34;
   text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.App-Wrapper {
+  display: block;
+  background-color: white;
+  margin: 0 auto;
+  width: 600px;
+  height: 100%;
+  box-sizing: border-box;
 }
 
 .App-logo {
@@ -8,31 +32,115 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .font-awesome {
+    animation: font-awesome-spin infinite 7s linear;
   }
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #45b8a8;
+  min-height: 10vh;
+  font-family: 'Potta One', cursive;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(15px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+h2.time {
+  font-family: 'Comfortaa', cursive;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+h3 {
+  font-family: 'Comfortaa', cursive;
+  padding: 10px;
+  font-size: 1.3rem;
 }
 
-@keyframes App-logo-spin {
+.font-awesome i {
+  color: white;
+  font-size: 2rem;
+  padding: 10px;
+  
+}
+
+section {
+  padding: 10px;
+}
+
+.App-link {
+  color: #3f4096;
+}
+
+.to-do {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #efefef;
+  box-shadow:
+  /* The top layer shadow */
+      0 1px 1px rgba(0,0,0,0.15),
+          /* The second layer */
+      0 10px 0 -5px #eee,
+          /* The second layer shadow */
+      0 10px 1px -4px rgba(0,0,0,0.15),
+          /* The third layer */
+      0 20px 0 -10px #eee,
+          /* The third layer shadow */
+      0 20px 1px -9px rgba(0,0,0,0.15);
+  padding: 30px;
+   
+}
+
+.check-box {
+  display: flex;
+  align-items: center;
+  margin: 20px 2.5%;
+  justify-content: flex-start;
+  padding: 30px 20px 0;
+  width: 70%;
+  border-bottom: 1px solid #cecece;
+  font-family: Roboto, sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+  color: #333333;
+}
+
+input[type=checkbox] {
+  margin-right: 10px;
+  font-size: 30px;
+}
+
+input[type=checkbox]:focus {
+  outline: 0;
+}
+input[type=text] {
+  border: hidden;
+  width: 100%
+}
+
+input[type=text] {
+  outline: 0;
+}
+
+@keyframes font-awesome-spin {
   from {
-    transform: rotate(0deg);
+    transform: rotate(90deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(180deg);
   }
+}
+
+.footer {
+  background-color: #45b8a8;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 10vh;
 }

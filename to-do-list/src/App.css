@@ -113,6 +113,9 @@ input[type=checkbox] {
   margin-right: 10px;
   font-size: 30px;
 }
+input[type=checkbox]:checked + input[type=text] {
+  text-decoration: line-through;
+}
 
 input[type=checkbox]:focus {
   outline: 0;
@@ -126,6 +129,13 @@ input[type=text] {
   outline: 0;
 }
 
+.line-through {
+  text-decoration: line-through;
+}
+
+.no-line-through {
+  text-decoration: none;
+}
 @keyframes font-awesome-spin {
   from {
     transform: rotate(90deg);

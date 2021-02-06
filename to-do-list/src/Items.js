@@ -1,4 +1,4 @@
-import React, { PureComponent } from 'react';
+import React from 'react';
 import './App.css';
 
 class Items extends React.Component {
@@ -8,29 +8,29 @@ class Items extends React.Component {
             checkboxes: {
                 type: "checkbox"
             },
-            input: ""
-        };
+            input: null,
+            answer: true
+         };
 
         this.handleInputChange = this.handleInputChange.bind(this);
     }
     handleInputChange(event) {
     this.setState({input: event.target.value});
+    this.setState({answer: false});
     }
 
-    handleCheckboxChange(event) {
-       this.setState({input: event.target.value}.style.textDecoration = 'line-through');
-    }
     render() {
         return (            
             <div className="check-box">
                 <input 
                 type={this.state.checkboxes.type} 
-                onChange={this.handleCheckboxChange}/>
+                disabled={this.state.answer}
+                />
                 <input
                 type="text"
+                className={this.crossList}
                 placeholder="Enter a new task"
                 value={this.state.input}
-                name="filterText"
                 onChange={this.handleInputChange}
                 />
                 </div>

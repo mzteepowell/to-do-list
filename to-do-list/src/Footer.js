@@ -4,7 +4,7 @@ export default function Footer() {
     return (
     <div>
     <footer className="footer"> 
-    <p>Follow Me</p>
+    <p>Follow Me:</p>
     <div className="footer-items">
         <section>
         <a

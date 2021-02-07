@@ -1,7 +1,7 @@
 [build]
-  command = "npm run build"
-  publish="path-to-react-app/build"
-  base = "path-to-react-app"
+  command = "npm build"
+  publish="https://github.com/mzteepowell/to-do-list/tree/master/to-do-list/build"
+  base = "https://github.com/mzteepowell/to-do-list/tree/master/to-do-list"
 
   [[redirects]]
   from = "/*"

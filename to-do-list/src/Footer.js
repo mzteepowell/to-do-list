@@ -1,6 +1,19 @@
 import React from 'react';
 
 export default function Footer() {
+    const name = (  <div class="LI-profile-badge"  
+    data-version="v1" 
+    data-size="medium" 
+    data-locale="en_US" 
+    data-type="horizontal" 
+    data-theme="dark" 
+    data-vanity="tarah-agbokhana">
+        <a class="LI-simple-link" 
+        href='https://www.linkedin.com/in/tarah-agbokhana?trk=profile-badge'>
+             Tarah Agbokhana
+        </a>
+    </div>
+        );
     return (
     <div>
     <footer className="footer"> 
@@ -37,7 +50,7 @@ export default function Footer() {
         </a>
         </section>
     </div>
-    <p className="branded">powered by Tarah Agbokhana</p>
+    <p className="branded"> powered by {name} </p>
     </footer>
     </div>
     );
